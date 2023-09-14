@@ -72,7 +72,7 @@
 {
     background-color: #ffffff;
     border: 2px solid #cccccc;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-bottom: 20px;
     overflow: hidden;
 }
@@ -89,6 +89,7 @@
     border-radius: 50%;
     background-color: #ffffff;
     border: 2px solid #cccccc;
+    width: 110px;
     height: 100px;
     margin: 54px 0px 0px 20px;
     padding: 2px;

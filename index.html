@@ -32,11 +32,11 @@
             <div class="user-card">
                 <!-- user card title -->
                 <div class="card-header">
-                    <img src="images/danny_fenton.jpeg" alt="profile picture">
+                    <img src="images/danny_phantom.jpeg" alt="profile picture" id="profile-pic">
                 </div>
                 <!-- user card content -->
                 <div class="card-body">
-                    <h1>Danny Phantom</h1>
+                    <h1 id="title">Danny Phantom</h1>
                     <h3>
                         <img src="icons/map-marker.png" alt="map-marker" class="icon"> Amity Park
                     </h3>
@@ -45,7 +45,7 @@
                         Master of the Ghost Zone!
                     </p>
                     <p>
-                        <a href="#"><img src="icons/gear.png" alt="gear-icon" class="icon"> edit profile</a>
+                        <a href="#" onclick="change()"><img src="icons/gear.png" alt="gear-icon" class="icon"> edit profile</a>
                     </p>
                 </div>
             </div>
@@ -71,30 +71,30 @@
             <div class="connections-request">
                 <div class="connections-request-header">
                     <span>
-                        <span class="notif-circle">2</span>
+                        <span class="notif-circle" id="request-num">2</span>
                         Connections Requests
                     </span>
                 </div>
                 <!-- Connection request content -->
                 <div class="connection-request-content">
-                    <div class="friend-request">
+                    <div class="friend-request" id="request-1">
                         <span class="left-side-request-content">
                             <img src="images/skulker.jpeg" alt="user-picture" class="user-pics"> 
                             <span>Skulker</span>
                         </span>
                         <span class="right-side-request-content">
-                            <img src="icons/accept-circle.png" alt="accept" class="yes-no-icons"> 
-                            <img src="icons/close-circle.png" alt="decline" class="yes-no-icons">
+                            <img src="icons/accept-circle.png" alt="accept" class="yes-no-icons" onclick="accept('#request-1')"> 
+                            <img src="icons/close-circle.png" alt="decline" class="yes-no-icons" onclick="deny('#request-1')">
                         </span>
                     </div>
-                    <div class="friend-request">
+                    <div class="friend-request" id="request-2">
                         <span class="left-side-request-content">
                             <img src="images/vlad.jpeg" alt="user-picture" class="user-pics"> 
                             <span>Vlad</span>
                         </span>
                         <span class="right-side-request-content">
-                            <img src="icons/accept-circle.png" alt="accept" class="yes-no-icons"> 
-                            <img src="icons/close-circle.png" alt="decline" class="yes-no-icons">
+                            <img src="icons/accept-circle.png" alt="accept" class="yes-no-icons" onclick="accept('#request-2')"> 
+                            <img src="icons/close-circle.png" alt="decline" class="yes-no-icons" onclick="deny('#request-2')">
                         </span>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                 <!-- Your connections title -->
                 <div class="your-connections-header">
                     <span>
-                        <span class="notif-circle">500+</span>
+                        <span class="notif-circle" id="connections-num">500</span>
                         Your Connections
                     </span>
                 </div>
@@ -146,5 +146,7 @@
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
